@@ -17,7 +17,7 @@ POST - client giving request to store the data in server.(username and password)
     - HTTP headers is introduced. It can transmit other files also and requesting image has been made. Open the communicaton by requesting and ending the connection after response and for getting another data have to open new connection.
 New TCP connection with each request(slower).
 ##HTTP 1.1
-    - The connection will not lost after the response from the server they will try to keep them alive. Allowing to send a second request before the answer for the first one is fully transmitted.
+    - The connection will not lost for 6 parallel request from the server they will try to keep them alive. Allowing to send a second request before the answer for the first one is fully transmitted.
 ##HTTP/2
     -Multiplicity - sending multpile request in one request and speeding.
 ##HTTP/2 over QUIC (HTTP/3)
