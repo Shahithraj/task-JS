@@ -3,6 +3,14 @@ console.log(Math.floor(4.6+5)) - 9 // round to the lowest value
 
 Adding the value to the array
 var a = [1,2,3,4,5]
-a.push(6) = [1,2,3,4,5,6]
-a.unshift(6) = [6,1,2,3,4,5]
+a.push(6) = [1,2,3,4,5,6] // add in the last place
+
+a.unshift(6) = [6,1,2,3,4,5] // add in the first place
+
+var b = ["mango",'orange','lemon','apple']
+b.splice(1,0,'grapes) - ["mango",'grapes','orange','lemon','apple']
+
+ Removing the element
+ a.pop() - removes the last element of the array
+ 
 
