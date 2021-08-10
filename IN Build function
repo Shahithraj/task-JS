@@ -13,4 +13,8 @@ b.splice(1,0,'grapes) - ["mango",'grapes','orange','lemon','apple']
  Removing the element
  a.pop() - removes the last element of the array
  
+ a.shift() - removes the first element of the array
+ 
+ a.splice(2,3) - [1,2] - it delete from 2 index with the respective count(3)
+ 
 
