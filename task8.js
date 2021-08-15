@@ -21,12 +21,16 @@ data.forEach(key => console.log( "name:"+ key.name +";"+ "capital :" +key.capita
 //4.
 var ans = data.map((foo)=> foo.population)
 var totalPeople = ans.reduce((a,b)=> a + b)
-
-//5.
-var dollar = (data.filter((foo)=> foo.currencies[0].code=="USD"))
- console.log(dollar)
-
 console.log(totalPeople)
+ 
+ 
+5.
+ let countriesUsingUsDollars = data.filter((x) => { 
+     for (let curr in x.currencies) {
+          if (x.currencies[curr].code == 'USD') {
+               return true;
+             } } }).map(x => console.log(x.name));
+
 };
 xhr.onerror = function () {
 console.log("Error", this.statusText);
